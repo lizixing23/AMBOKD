@@ -36,9 +36,9 @@ def parse_option():
     parser.add_argument('--ID_list', type=int, nargs='+', default=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11], help='List of IDs')
     parser.add_argument('--target_type', type=str, default='armored', choices=['armored', 'tank'], help='Target type') # use "tank" in the transfer experiment
     parser.add_argument('--exp_type', type=str, default='1_', choices=['1_', '2_'], help='Experiment type')
-    parser.add_argument('--num_labels', type=int, default=15, help='Number of labels')
+    parser.add_argument('--num_labels', type=int, default=2, help='Number of labels')
     parser.add_argument('--batch_size', type=int, default=64, help='Batch size')
-    parser.add_argument('--training_epoch', type=int, default=2, help='Number of training epochs')
+    parser.add_argument('--training_epoch', type=int, default=15, help='Number of training epochs')
     parser.add_argument('--learning_rate', type=float, default=1e-4, help='Learning rate')
     parser.add_argument('--seed_list', type=int, nargs='+', default=[1, 3, 6, 7, 9], help='List of seeds')
     parser.add_argument('--T', type=int, default=4, help='Temperature for KD distillation')

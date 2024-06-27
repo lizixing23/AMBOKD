@@ -5,7 +5,7 @@ PyTorch code and the ESSVP dataset for our TPAMI 2024 paper "Adaptive Modality B
 This folder contains the ESSVP multimodal dataset and the experimental code for the AMBOKD-related algorithms
 To run the experiment:
 1. Download the essvp_dataset and pretrained uni-modal models from https://www.kaggle.com/datasets/lizixing23/essvp-dataset, and move them to the ESSVP_dataset and the models folders, respectively.
-2. Run the following command in the AMBOKD_ESSVP folder to train the model and save the 10-fold cross-validation results:
+2. Run the following command in the AMBOKD_ESSVP folder to train the model and save the 10-fold cross-validation results:  
    CMM: python main.py --model_s_fusion CMM --distill None --IS_adjust_lr False --IS_adjust_kd False  
    MLB: python main.py --model_s_fusion MLB --distill None --IS_adjust_lr False --IS_adjust_kd False  
    AMM: python main.py --model_s_fusion AMM --distill None --IS_adjust_lr False --IS_adjust_kd False  

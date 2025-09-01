@@ -99,6 +99,7 @@ def read_pic(pic_path, target_type,loader_type):
         picpath = pic_path + target_type + '/' + 'noise_0.2'##noise_0.2
 
     piclist = os.listdir(picpath)
+    piclist=sorted(piclist)
     pics = [os.path.join(picpath, img) for img in piclist]
 
     return pics
@@ -106,6 +107,7 @@ def read_pic(pic_path, target_type,loader_type):
 def read_xml(pic_path, target_type):
     xmlpath = pic_path + target_type + '/annotations/xml'
     xmllist = os.listdir(xmlpath)
+    xmllist = sorted(xmllist)
     label_type = label_name(target_type)
     boxes = []
     for each_xml in xmllist:
@@ -241,4 +243,5 @@ class get_essvp_Data(Dataset):
                     pp=self.pic[idx],
                     )
         return data
+
 

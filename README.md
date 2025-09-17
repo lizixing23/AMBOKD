@@ -1,5 +1,5 @@
 # AMBOKD
-PyTorch code and the ESSVP dataset for our paper "Adaptive Modality Balanced Online Knowledge Distillation for Brain-Eye-Computer based Dim Object Detection in Aerial Images".
+PyTorch code and the ESSVP dataset for our paper on TNNLS:"Adaptive Modality Balanced Online Knowledge Distillation for Brain-Eye-Computer based Dim Object Detection in Aerial Images".
 
 # AMBOKD_ESSVP
 This folder contains the ESSVP multimodal dataset and the experimental code for the AMBOKD-related algorithms
